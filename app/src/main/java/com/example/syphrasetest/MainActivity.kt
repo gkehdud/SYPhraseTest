@@ -24,7 +24,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting(stringResource(id = R.string.app_Hello))
+                    Column {
+                        Greeting(stringResource(id = R.string.app_Hello))
+                        Text("TEST")
+                    }
                 }
             }
         }
